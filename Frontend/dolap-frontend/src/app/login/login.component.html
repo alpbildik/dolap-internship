@@ -1,0 +1,10 @@
+<div class="col-sm-4 col-sm-offset-1">
+  <div class="login-form"><!--login form-->
+    <h2>Login to your account</h2>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+      <input name="email" placeholder="Email Address" ngModel required #email="ngModel">
+      <input name="password" type="password" placeholder="******" ngModel>
+      <button class="btn btn-default">Login</button>
+    </form>      
+  </div><!--/login form-->
+</div>
